@@ -1,0 +1,266 @@
+/* Header alanı */
+.header {
+  height: 100vh;
+  background-color: #e0f7fa;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* Logo sol üstte */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font-size: 1.8rem;
+  color: #0728ff;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 10;
+}
+
+/* Navbar sabit ve büyük */
+.navbar {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  background-color: transparent;
+  z-index: 10;
+}
+
+.navbar a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #0ee435;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #0e06aa;
+}
+
+.header-content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 100px;
+  padding-left: 30px;
+}
+
+/* Profil fotoğrafı solda */
+.header .profil-foto {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  float: left;
+  margin-right: 30px;
+  box-shadow: 0 4px 12px rgba(178, 15, 15, 0.2);
+}
+
+/* Ortadaki yazılar */
+.header h1,
+.header p {
+  color: rgb(255, 128, 0);
+  margin: 0;
+  padding-top: 50px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  margin-top: 1rem;
+}
+
+/* Scroll down icon */
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 2rem;
+  animation: bounce 2s infinite;
+  color: rgb(14, 221, 253);
+  cursor: pointer;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+}
+
+#overemij {
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Başlık ortada ve yeşil */
+#overemij h2 {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2e7d32; /* Koyu yeşil */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+/* İçerik düzeni: yazılar solda, fotoğraf sağda */
+#overemij .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* Yazılar solda, mavi renkte */
+#overemij .text p {
+  color: #1565c0; /* Mavi */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Fotoğraf – sağda, yuvarlak */
+#overemij .profil-foto {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 40px;
+  box-shadow: 0 4px 12px rgba(8, 138, 101, 0.2);
+}
+
+/* Mijn Opleiding bölümü (eski #overemij) */
+#opleiding {
+  height: 100vh;
+  background-color: #b2ebf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#opleiding .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  width: 100%;
+}
+
+#opleiding h2 {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2e7d32;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#opleiding p {
+  color: rgb(241, 169, 44);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+#opleiding .profil-foto {
+  width: 300px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-right: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact bölümü */
+#contact {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#contact h2 {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2e7d32;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#contact .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  width: 100%;
+}
+
+#contact .left {
+  max-width: 400px;
+  font-size: 1.1rem;
+  color: #ff7605;
+}
+
+#contact .right {
+  text-align: right;
+  font-size: 1.1rem;
+  color: #ed2b2b;
+}
+
+#contact .right a {
+  color: #2d3aed;
+  text-decoration: none;
+}
+
+#contact .right a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  background-color: #eeff00;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #010000;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
