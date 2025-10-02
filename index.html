@@ -1,97 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Orhan</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Orhan's Porfolio</title>
   </head>
-
   <body>
-    <header class="header">
-      <a href="index.html" class="logo"><span>Orhan Sahin</span></a>
-
-      <nav class="navbar">
-        <a href="#home" class="nav-home">Home</a>
-        <a href="#overemij" class="nav-overe-mij">Over Mij</a>
-        <a href="#opleiding" class="nav-opleiding">Mijn Opleiding</a>
-        <a href="#contact" class="nav-contact">Contact</a>
-      </nav>
-
-      <div class="header-content" id="home">
-        <img src="profil.jpg" alt="orhan's foto" class="profil-foto" />
-        <div class="text">
-          <h1>Hoi!</h1>
-          <p>Welkom op de portfolio-website van Orhan Sahin...</p>
-        </div>
-      </div>
+    <!-- Header -->
+    <header>
+      <h1>Orhan</h1>
+      <p>Ik ben Orhan, ik ben een webontwikkelaar.</p>
     </header>
 
-    <main class="main">
-      <section id="overemij">
-        <h2>Over Mij</h2>
-        <div class="content">
-          <div class="text">
-            <p>
-              Ik ben Orhan Sahin, 20 jaar oud en afkomstig uit Turkije. Sinds
-              ongeveer drie jaar woon ik in Nederland, in het gezellige dorp
-              Vries.<br />
-              Momenteel studeer ik in Groningen en werk ik parttime in een
-              supermarkt.<br />
-              In mijn vrije tijd speel ik graag schaak.<br />
-              Op deze website vind je meer over wie ik ben, wat ik doe en waar
-              ik naartoe wil. <br />
-              Veel plezier met rondkijken!
-            </p>
-          </div>
-          <img
-            src="profil.jpg"
-            alt="orhan's foto"
-            class="profil-foto"
-            width="300"
-            height="400"
-          />
-        </div>
+    <!-- Main content -->
+    <main>
+      <section>
+        <h2>Hobby's</h2>
+        <ul>
+          <li>Schaken</li>
+          <li>Lezen</li>
+          <li>Voetballen</li>
+        </ul>
       </section>
 
-      <section id="opleiding">
-        <h2>Mijn Opleiding</h2>
-        <div class="content">
-          <img src="school.jpg" alt="school's foto" class="profil-foto" />
-          <p>
-            Ik volg de mbo-opleiding Software Developer op niveau 4 aan het
-            Alfa-college in Groningen.<br />
-            Deze BOL-opleiding van 3 tot 4 jaar bereidt mij voor op een carrière
-            in het ontwikkelen van applicaties, websites en software.<br />
-            De focus ligt op praktijkgericht leren op school en het opdoen van
-            werkervaring via stages bij bedrijven.
-          </p>
-        </div>
+      <section>
+        <h2>Favoriete website</h2>
+        <p>
+          Bezoek mijn favoriete website:
+          <a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+        </p>
       </section>
 
-      <section id="contact">
+      <section>
+        <h2>Mijn vaardigheden</h2>
+        <table border="1" cellpadding="8">
+          <tr>
+            <th>Vaardigheid</th>
+            <th>Niveau</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>Goed</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Gemiddeld</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Beginner</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Over mij -->
+      <section>
+        <h2>Over mij</h2>
+        <img
+          src="pictures/KleinOrhan.jpeg"
+          alt="Foto van Orhan"
+          width="150"
+          height="250"
+        />
+        <p>
+          Hallo, ik ben Orhan en ik hou van technologie en creatief bezig
+          zijn.<br />
+          Ik leer graag nieuwe dingen over programmeren en webontwikkeling.<br />
+          In de toekomst wil ik mijn eigen projecten bouwen en verder groeien
+          als ontwikkelaar.
+        </p>
+      </section>
+
+      <!-- Projecten -->
+      <section>
+        <h2>Projecten</h2>
+        <h3>Mijn Portfolio</h3>
+        <p>
+          Dit is mijn eerste eigen website waar ik mijn hobby’s, vaardigheden en
+          projecten laat zien.<br />
+          <a href="http://127.0.0.1:5500/index.html"> Mijn Portfolio </a>
+        </p>
+        <h3>Dit is mijn WebGame;Battleship Pacific.</h3>
+        <p>
+          Dat is een hele simple webgame die gebouwd met HTML-CSS-Javascript.
+        </p>
+        <a href="http://127.0.0.1:5500/index.html"> Battleship Pacific</a>
+      </section>
+
+      <!-- Contact -->
+      <section>
         <h2>Contact</h2>
-        <div class="content">
-          <div class="left">
-            <p>Je kunt zo contact met mij opnemen</p>
-          </div>
-          <div class="right">
-            <p>
-              Email:
-              <a href="mailto:obaba1277@gmail.com">obaba1277@gmail.com</a>
-            </p>
-            <p>Tel: <a href="tel:+0621387110">+0621387110</a></p>
-            <p>
-              GitHub:
-              <a href="https://github.com/Orhan257" target="_blank">Orhan257</a>
-            </p>
-          </div>
-        </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <p>&copy; Gemaakt door Orhan Sahin.</p>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Orhan. Alle rechten voorbehouden.</p>
     </footer>
   </body>
 </html>
